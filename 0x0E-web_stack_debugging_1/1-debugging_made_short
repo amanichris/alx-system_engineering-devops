@@ -3,8 +3,8 @@
 
 # creates a symbolic link (-s option) between the Nginx configuration file
 # and the enabled sites directory
-In ~sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+In -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 # restart nginx
 service nginx restart
 # terminates the first nginx process ID
-kill "$ (pgrep 'nginx' | head -1)"
+kill "$(pgrep 'nginx' | head -1)"
